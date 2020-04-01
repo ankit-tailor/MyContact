@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactEdit"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Name: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+        <EditText
+            android:id="@+id/name_field_edit"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Enter the name"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Phone: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+        <EditText
+            android:id="@+id/number_field_edit"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Enter the phone number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="575dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/delete_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="DELETE" />
+    </LinearLayout>
+
+</LinearLayout>
